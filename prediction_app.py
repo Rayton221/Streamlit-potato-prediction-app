@@ -3,7 +3,7 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 
-model = tf.keras.models.load_model("E:\\DL\\Potatoe Project\\models\\version1.h5")
+model = tf.keras.models.load_model("version1.h5")
 classes = ["Early blight","Late blight","Healthy"]
 
 image = st.file_uploader(label="Upload an image to predict",
